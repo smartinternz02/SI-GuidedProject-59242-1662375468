@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_shade_1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Add Items to Card"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/idTVHeading"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/idTVHeading"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:helperText="Enter Item Name"
+                android:textColorHint="@color/white"
+                android:padding="5dp"
+                app:hintTextColor="@color/white"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtItemName"
+                    android:inputType="text"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="114sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:helperText="Enter Item Quantity"
+                android:textColorHint="@color/white"
+                android:padding="5dp"
+                app:hintTextColor="@color/white"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtItemQuantity"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="114sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:helperText="Enter Item Price"
+                android:textColorHint="@color/white"
+                android:padding="5dp"
+                app:hintTextColor="@color/white"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtItemPrice"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="114sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2"
+                >
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:id="@+id/idBtnCancel"
+                    android:text="Cancel"
+                    android:background="@drawable/custom_button_back"
+                    android:textAllCaps="false"
+                    />
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:id="@+id/idBtnAdd"
+                    android:text="Add"
+                    android:background="@drawable/custom_button_back"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
